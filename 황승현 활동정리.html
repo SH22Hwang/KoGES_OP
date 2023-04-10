@@ -1316,10 +1316,10 @@ var_to_use <span class="token operator">=</span> pd<span class="token punctuatio
 <table>
 <thead>
 <tr>
-<th>binary(0 또는 1 )</th>
+<th>binary(0 또는 1)</th>
 <th>cath0 (계층 없는 범주형 변수)</th>
 <th>cath1 (계층 있는 범주형 변수)</th>
-<th>cnt (연속현 변수)</th>
+<th>cnt (연속형 변수)</th>
 <th>tumor_name (종양 또는 여성력 병명)</th>
 <th>dependent (종속변수)</th>
 </tr>
@@ -2007,21 +2007,21 @@ label <span class="token operator">=</span> pd<span class="token punctuation">.<
 </li>
 </ul>
 </li>
-<li><p>XGBoost (eXtreme Gradient Boosting)</p>
+</ul>
+<h4 class="atx" id="xgboost">XGBoost</h4>
+<p>eXtreme Gradient Boosting</p>
 <ul>
 <li><p>2014, Tianqi Chen</p>
 </li>
 <li><p>각 후속 트리가 이전 트리의 오류 수정을 시도하는 일련의 결정 트리를 구축합니다. 각 단계에서 알고리즘은 음의 기울기에 가장 잘 맞는 결정 트리를 구성하는 데 사용되는 손실 함수의 기울기와 헤시안을 계산합니다. 이 프로세스는 원하는 트리 수에 도달하거나 모델이 과적합되기 시작할 때까지 반복됩니다.</p>
 </li>
 </ul>
-</li>
-<li><p>LGBM (Light Gradient Boosting Machine)</p>
+<h4 class="atx" id="lgbm">LGBM</h4>
+<p>Light Gradient Boosting Machine</p>
 <ul>
 <li><p>2017, Microsoft</p>
 </li>
 <li><p>GOSS(Gradient-based One-Side Sampling) 및 EFB(Exclusive Feature Bundling)라는 기술을 기반으로 의사 결정 트리를 구축하기 위해 다른 전략을 사용합니다. GOSS는 손실 함수의 기울기를 기반으로 훈련 데이터를 샘플링하는 기법으로, 정확도를 희생하지 않으면서 훈련에 사용되는 샘플 수를 줄이는 데 도움이 됩니다. EFB는 학습에 사용되는 기능의 수를 줄이기 위해 유사한 기능을 함께 묶어 오버피팅을 줄이고 속도를 향상시키는 데 도움이 되는 기술입니다.</p>
-</li>
-</ul>
 </li>
 </ul>
 <h3 class="atx" id="dnn">DNN</h3>
@@ -2040,19 +2040,52 @@ label <span class="token operator">=</span> pd<span class="token punctuation">.<
 </li>
 </ul>
 </li>
-<li><p>MLP</p>
+</ul>
+<h4 class="atx" id="mlp">MLP</h4>
 <ul>
 <li><p>가장 기초적인 DNN</p>
 </li>
 <li><p>퍼셉트론을 여러겹 쌓음</p>
 </li>
-<li><p>순전파와 역전파로 가중치와 편향을 조정하여, 오류가 적음</p>
+<li><p><strong>역전파</strong>로 가중치와 편향을 조정하여, 오류가 적음</p>
+<ul>
+<li><p>순전파는 입력층에서 은닉층을 거쳐 출력층으로</p>
 </li>
-<li><p>과적합을 방지하기 위해, 파라미터를 세심하게 조정해야 함</p>
+<li><p>역전파는 출력층에서 은닉층을 거쳐... 반대로.</p>
+<ul>
+<li><p>오차를 줄이기 위해 가중치 조정</p>
+</li>
+<li><p>은닉층의 각 가중치를 오차에 대하여 미분.</p>
+</li>
+<li><p>체인 법칙으로 식을 풀어서 미분 풀어씀.</p>
 </li>
 </ul>
 </li>
-<li><p></p>
+</ul>
+</li>
+<li><p>과적합을 방지하기 위해, 파라미터를 세심하게 조정해야 함.</p>
+</li>
+</ul>
+<h4 class="atx" id="saint">SAINT</h4>
+<p>Self-Attention and Intersample Attention Transformer</p>
+<ul>
+<li>seq2seq<ul>
+<li>입력 시퀀스로부터 다른 도메인의 시퀀스 출력</li>
+<li>입력 시퀀스를 인코더를 통해 고정된 크기의 컨텍스트 벡터로 압축</li>
+<li>컨텍스트 벡터를 디코더를 통해 출력 시퀀스 출력</li>
+<li>긴 문장... 장기 의존성 문제</li>
+</ul>
+</li>
+<li>attention<ul>
+<li>디코더가 출력 단어를 예측할 때마다 매번 인코더에서 전체 입력 문장을 다시 참고</li>
+<li>다시 참고할 떄, 예측해야할 단어와 연관이 있는 단어에 가중치 부여</li>
+<li></li>
+</ul>
+</li>
+<li>transformer<ul>
+<li>self-attention</li>
+<li>기계번역에서 단어들의 맥락을 파악</li>
+</ul>
 </li>
 </ul>
 </article>
