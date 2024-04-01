@@ -1,0 +1,28 @@
+Data pre-processing
+Missing variables were 범주형 변수: , 연속형 변수: , Normalization은 non-normalization
+To train machine learning models and assess model classification performance, patient data were randomly divided into training and testing sets at an 8:2 ratio using a stratified random sampling method implemented in Python (version 3.9.13).
+Data encoding were Catboost
+One hot ecoding
+
+Feature selection and model development
+We utilized six machine learning algorithms[extreme gradient boosting (XGBoost), decision tree (DT), random forest (RF), support vector machine (SVM), light gradient boosting machine (LGBM) and multilayer perception (MLP)] to construct models for predicting osteoporosis.
+
+Model validation
+F1 score, PR AUC, accuracy, confusion_matrix, precision, recall
+
+Feature importance evaluation
+
+-----
+
+데이터 전처리의 모든 과정은 Python(version 3.9.13)환경에서 NumPy(1.25.2), Pandas(1.5.3), scikit-learn(1.2.2), category-encoders(2.6.3)등을 사용하였다.
+
+결측값 대치(missing values imputation) 방법은 변수의 종류에 따라 다르게 수행했다. 범주형 변수는 최빈값, 연속형변수는 평균값으로 대치(Imputation)한다.
+결측값이 50개 이상인 변수는 drop하였다.
+
+기존 데이터를 보고 질환유무, 약물력, 가족력, 혈압 등을 새로 가공하였다. 
+
+머신러닝 모델 학습을 위해 연속형 데이터를 표준화(standardization)하였다.  # normalization과는 다름.
+범주형 데이터를 category-encoders의 CatBoostEncoder로 임베딩(Embedding, 또는 벡터화 vectorization)하였다.  # One hot ecoding 안 씀
+
+
+
