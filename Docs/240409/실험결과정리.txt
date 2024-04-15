@@ -1,0 +1,38 @@
+폐경 전 후 전체
+
+ Confusion Matrix:
+[[28 22]
+ [11 39]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.670
+  Precison: 0.639
+  Recall  : 0.780
+  F1 Score: 0.703
+
+'AS1_HBA1C', 'SNP_A-1809518', 'AS1_AMED', 'SNP_A-2218697',
+       'AS1_NA', 'AS1_PHYSIT', 'SNP_A-4262878', 'SNP_A-2310995',
+       'AS1_ARRM', 'AS1_BPSIT1SYS', 'AS1_ICOFF_1', 'SNP_A-2181021',
+       'AS1_PHYSTB', 'SNP_A-1850320', 'AS1_EGFR', 'AS1_INCOME',
+       'AS1_EDUA', 'AS1_PMAG_C', 'AS1_AGE', 'AS1_PMYN_C'
+
+
+Confusion Matrix:
+[[47  3]
+ [37 13]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.600
+  Precison: 0.812
+  Recall  : 0.260
+  F1 Score: 0.394
+
+'AS1_ALBUMIN_TR', 'AS1_CREATININE_TR1', 'AS1_PHYSTB', 'AS1_ARRM',
+       'SNP_A-2242511', 'AS1_DRFH', 'AS1_MNSAG', 'SNP_A-2218697',
+       'SNP_A-2181021', 'AS1_INCOME', 'SNP_A-2266073', 'SNP_A-4262878',
+       'SNP_A-1809518', 'SNP_A-4299800', 'SNP_A-2310995', 'SNP_A-1850320',
+       'SNP_A-2130710', 'SNP_A-2263153', 'AS1_AGE', 'AS1_EDUA'
