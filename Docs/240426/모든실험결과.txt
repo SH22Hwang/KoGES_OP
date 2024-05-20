@@ -1,0 +1,314 @@
+-----폐경 후-----
+
+DT all
+Confusion Matrix:
+[[57 43]
+ [48 52]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.545
+  Precison: 0.547
+  Recall  : 0.520
+  F1 Score: 0.533
+
+SVM all
+Confusion Matrix:
+[[44 56]
+ [47 53]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.485
+  Precison: 0.486
+  Recall  : 0.530
+  F1 Score: 0.507
+
+RF all <- 다시 해야할 듯
+Confusion Matrix:
+[[84 16]
+ [84 16]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.500
+  Precison: 0.500
+  Recall  : 0.160
+  F1 Score: 0.242
+
+
+LGBM all
+ Confusion Matrix:
+[[84 16]
+ [69 31]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.575
+  Precison: 0.660
+  Recall  : 0.310
+  F1 Score: 0.422
+
+XGB <- 전에 했던거로
+
+
+MLP all
+Confusion Matrix:
+[[53 47]
+ [48 52]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.525
+  Precison: 0.525
+  Recall  : 0.520
+  F1 Score: 0.523
+
+
+-----폐경 후 20-----
+
+DT 20
+Confusion Matrix:
+[[78 22]
+ [73 27]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.525
+  Precison: 0.551
+  Recall  : 0.270
+  F1 Score: 0.362
+
+SVM 20
+Confusion Matrix:
+[[36 64]
+ [17 83]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.595
+  Precison: 0.565
+  Recall  : 0.830
+  F1 Score: 0.672
+
+RF 20
+Confusion Matrix:
+[[84 16]
+ [71 29]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.565
+  Precison: 0.644
+  Recall  : 0.290
+  F1 Score: 0.400
+
+LGBM 20
+Confusion Matrix:
+[[81 19]
+ [61 39]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.600
+  Precison: 0.672
+  Recall  : 0.390
+  F1 Score: 0.494
+
+XGB 20
+Confusion Matrix:
+[[81 19]
+ [61 39]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.600
+  Precison: 0.672
+  Recall  : 0.390
+  F1 Score: 0.494
+
+MLP 20
+Confusion Matrix:
+[[33 67]
+ [20 80]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.565
+  Precison: 0.544
+  Recall  : 0.800
+  F1 Score: 0.648
+
+
+-----폐경 전 후 전체-----
+
+DT all
+ Confusion Matrix:
+[[75 25]
+ [63 37]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.560
+  Precison: 0.597
+  Recall  : 0.370
+  F1 Score: 0.457
+
+SVM all
+Confusion Matrix:
+[[61 39]
+ [43 57]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.590
+  Precison: 0.594
+  Recall  : 0.570
+  F1 Score: 0.582
+
+RF all
+ Confusion Matrix:
+[[86 14]
+ [76 24]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.550
+  Precison: 0.632
+  Recall  : 0.240
+  F1 Score: 0.348
+
+LGBM all
+Confusion Matrix:
+[[66 34]
+ [39 61]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.635
+  Precison: 0.642
+  Recall  : 0.610
+  F1 Score: 0.626
+
+XGB all
+Confusion Matrix:
+[[58 42]
+ [17 83]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.705
+  Precison: 0.664
+  Recall  : 0.830
+  F1 Score: 0.738
+
+MLP all
+Confusion Matrix:
+[[56 44]
+ [32 68]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.620
+  Precison: 0.607
+  Recall  : 0.680
+  F1 Score: 0.642
+
+
+------폐경 전 후 전체 20개------
+
+DT 20
+ Confusion Matrix:
+[[79 21]
+ [54 46]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.625
+  Precison: 0.687
+  Recall  : 0.460
+  F1 Score: 0.551
+
+SVM 20
+ Confusion Matrix:
+[[40 60]
+ [ 9 91]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.655
+  Precison: 0.603
+  Recall  : 0.910
+  F1 Score: 0.725
+
+RandomForest 20
+Confusion Matrix:
+[[80 20]
+ [61 39]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.595
+  Precison: 0.661
+  Recall  : 0.390
+  F1 Score: 0.491
+
+LGBM 20
+ Confusion Matrix:
+[[77 23]
+ [64 36]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.565
+  Precison: 0.610
+  Recall  : 0.360
+  F1 Score: 0.453
+
+
+XGBoost 20
+ Confusion Matrix:
+[[57 43]
+ [15 85]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.710
+  Precison: 0.664
+  Recall  : 0.850
+  F1 Score: 0.746
+
+MLP 20
+Confusion Matrix:
+[[49 51]
+ [19 81]]
+
+  [[TP  FN]
+  [ FP  TN]]
+
+  Accuracy: 0.650
+  Precison: 0.614
+  Recall  : 0.810
+  F1 Score: 0.698
